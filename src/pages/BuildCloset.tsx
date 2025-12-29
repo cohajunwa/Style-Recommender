@@ -1,6 +1,9 @@
 import { Box, Button, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 function BuildCloset() {
+    const navigate = useNavigate();
+
     return (
         <Box
             sx={{
@@ -58,6 +61,7 @@ function BuildCloset() {
                             backgroundColor: '#a279aa',
                         },
                     }}
+                    onClick={() => navigate('/analysis')}
                 >
                     Generate Analysis
                 </Button>
